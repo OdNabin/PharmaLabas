@@ -1,0 +1,10 @@
+body{
+  font-family: 'Times New Roman', Times, serif;
+}
+.footer-link {
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #fff !important;
+}
