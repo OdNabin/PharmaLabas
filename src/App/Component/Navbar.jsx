@@ -56,38 +56,37 @@ const Navbar = () => {
               </li>
 
               {/* SERVICES DROPDOWN */}
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                >
+              <li className="nav-item ">
+               <NavLink className="nav-link" to="/services">
                   Services
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <NavLink className="dropdown-item" to="/services/test1">
-                      Test 1
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink className="dropdown-item" to="/services/test2">
-                      Test 2
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink className="dropdown-item" to="/services/test3">
-                      Test 3
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink className="dropdown-item" to="/services/test4">
-                      Test 4
-                    </NavLink>
-                  </li>
-                </ul>
+                  </NavLink>
+            
+             
               </li>
+                <li className="nav-item">
+                <NavLink className="nav-link" to="/about">
+                  Industries
+                </NavLink>
+              </li>
+
+                  <li className="nav-item">
+                <NavLink className="nav-link" to="/about">
+                  Engagement Model
+                </NavLink>
+              </li>
+
+                  <li className="nav-item">
+                <NavLink className="nav-link" to="/about">
+                Insights 
+                </NavLink>
+              </li>
+
+                     <li className="nav-item">
+                <NavLink className="nav-link" to="/about">
+              Our Expert Network
+                </NavLink>
+              </li>
+              
             </ul>
 
             {/* RIGHT: Contact */}

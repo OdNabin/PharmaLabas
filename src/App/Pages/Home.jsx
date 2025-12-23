@@ -1,6 +1,13 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import home from "../../assets/pha1.jpg";
+import service1 from "../../assets/service1.jpg"
+import service2 from "../../assets/service2.jpg"
+import service3 from "../../assets/service3.jpg"
+import service4 from "../../assets/service4.jpg"
+import service5 from "../../assets/service5.jpg"
+import service6 from "../../assets/service6.jpg"
 const Home = () => {
   useEffect(() => {
     AOS.init({
@@ -12,98 +19,108 @@ const Home = () => {
 
   const services = [
     {
-      title: "R&D & Process Scale-Up",
-      desc: "Formulation development, lab-to-plant scale-up, manufacturing troubleshooting.",
-      img: "https://static.vecteezy.com/system/resources/previews/046/469/942/large_2x/team-of-scientific-researchers-working-with-professional-modern-equipment-in-laboratory-chemists-in-pharmaceutical-lab-examining-sample-for-medical-experiment-with-technology-for-medicine-industry-photo.JPG",
+      title: "Technology & Product Development",
+      desc: "Target product definition, formulation strategy, technology evaluation, and execution with qualified development and manufacturing partners.",
+      img:service1,
     },
     {
-      title: "Clinical & Evidence Support",
-      desc: "Clinical strategy, CRO connections, study design and data-to-claims support.",
-      img: "https://media.istockphoto.com/id/1646567235/photo/team-medical-analysts-and-doctors-consulting-with-paperwork-of-graphs-data-and-charts-in.jpg?s=612x612&w=0&k=20&c=4u-A8dryzdpNBww_BFWaAFvJk1qpvE0qpDvYc__yH6E=",
+      title: "Clinical & R&D Advisory",
+      desc: "Clinical strategy, evidence planning, study design, CRO identification, and alignment of data generation with commercial objectives.",
+img:service2    },
+    {
+      title: "Consulting & Business Advisory",
+      desc: "Portfolio strategy, market prioritisation, pricing considerations, partnership models, and go-to-market decision support.",
+img:service3   },
+    {
+      title: "Network & Commercial Development",
+      desc: "Identification, evaluation, and structuring of relationships with distributors, CMOs, CROs, service providers, and key commercial partners.",
+      img:service4
     },
     {
-      title: "Supply Chain & Partner Development",
-      desc: "Identification and vetting of CMOs, CROs, and strategic suppliers.",
-      img: "https://medpak.com/wp-content/uploads/2024/08/Pharmaceutical-supply-chain-1.png",
-    },
+      title: "Technology Scouting & Licensing",
+      desc: "In-licensing, out-licensing, technology due diligence, and structured evaluation of external innovation opportunities.",
+img:service5    },
     {
-      title: "Technology Scouting, In-/Out-Licensing & Vetting",
-      desc: "Technology scouting, licensing strategy, due diligence and partner vetting.",
-      img: "https://ftp-bucket-s3-upload.s3-accelerate.amazonaws.com/Technology%20Scouting%20Process.png",
-    },
-    {
-      title: "Market Research & Landscape Analysis",
-      desc: "Competitive intelligence, market sizing, trend analysis and opportunity mapping.",
-      img: "https://www.slideteam.net/media/catalog/product/cache/1280x720/p/h/pharmaceutical_company_sales_analysis_on_power_bi_slide01.jpg",
-    },
-    {
-      title: "Patent & IP Support (via specialist partners)",
-      desc: "Patent landscape analysis, freedom-to-operate searches, and IP strategy support.",
-      img: "https://wvutoday.wvu.edu/files/d/1c08653a-fd33-4584-aca2-86765eff7ee4/patents.png",
-    },
+      title: "IP & Patent Support (via specialist partners)",
+      desc: "Patent landscape reviews, freedom-to-operate assessments, and IP strategy support through trusted specialist partners.",
+img:service6  },
   ];
 
   return (
-    <div style={{ backgroundColor: "#F4FAFF", marginTop: "70px" }}>
+    <div style={{ backgroundColor: "#F4FAFF", marginTop: "70px" }} >
+
       {/* HERO SECTION */}
-      <section className="py-5">
-        <div className="container ">
+      <section className="py-5 " >
+        <div className="container">
           <div className="row align-items-center">
+
             <div className="col-lg-6" data-aos="fade-right">
-              {/* <h1 className="fw-bold display-4 text-dark">
-                Zen Pharma Labs
-              </h1> */}
-              <h2 className="fw-bold display-6 text-primary mt-3">
-                Your External R&amp;D and Technology Team for Health Brands
-              </h2>
+              <h1 className="fw-bold display-6 text-primary">
+                Technology & Execution Partner for Health and Nutraceutical Innovators
+              </h1>
 
               <p className="fs-5 text-secondary mt-4">
-                Zen Pharma Labs provides expert consulting and technical support to small and mid-sized companies in pharma, nutraceuticals, health &amp; wellness, and pet health sectors. We bridge the gap from innovative ideas to successful market launches.
+                Zen Pharma Labs (ZPL) supports pharmaceutical, nutraceutical, health & wellness,
+                and pet health organisations by combining strategic advisory with a curated network
+                of experts across R&D, clinical, regulatory, and commercial functions.
+              </p>
+
+              <p className="text-secondary mt-3">
+                We help organisations move from idea to impact — efficiently, transparently,
+                and with execution clarity across India, Asia, and other key markets.
               </p>
 
               <div className="d-flex gap-3 mt-5 flex-wrap">
-                <button className="btn btn-primary btn-lg">
-                  Talk to Our Team
+                <button className="btn btn-primary btn-lg px-4">
+                  Schedule a Conversation
                 </button>
-                <button className="btn btn-outline-primary btn-lg">
-                  View Services
+                <button className="btn btn-outline-primary btn-lg px-4">
+                  Explore Our Services
                 </button>
               </div>
             </div>
 
             <div className="col-lg-6 text-center" data-aos="fade-left">
-              <img
-                src="https://t4.ftcdn.net/jpg/10/05/84/67/360_F_1005846720_yV2XmFNAS535InbDCaw5p6TolGSNg3rX.jpg"
-                alt="Zen Pharma Labs expert consulting team"
-                className="img-fluid rounded-4 "
-              />
+           <img
+  src={home}
+  alt="Zen Pharma Labs – Technology & Execution Partner"
+  className="img-fluid my-3  rounded-4 shadow-lg"
+  style={{
+    maxHeight: "420px",
+    objectFit: "cover",
+    width: "100%",
+  }}
+/>
             </div>
+
           </div>
         </div>
       </section>
 
-
-
-      {/* SHORT INTRO */}
+      {/* INTRO */}
       <section className="py-5 bg-white">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-9 text-center" data-aos="fade-up">
               <p className="fs-4 text-secondary lead">
-                At <strong>Zen Pharma Labs</strong>, we design and execute tailored programmes across R&amp;D, scale-up, clinical, supply chain, technology access, and market intelligence — always assembling the right mix of experts for each client brief.
+                ZPL operates as an extension of your team — not as a single-vendor provider.
+                For each engagement, we assemble the right combination of technologists,
+                formulators, clinicians, regulatory advisors, and commercial strategists
+                to deliver practical, executable programmes.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SERVICES OVERVIEW */}
+      {/* SERVICES */}
       <section className="py-5">
         <div className="container">
+
           <div className="text-center mb-5" data-aos="fade-up">
-            <h2 className="fw-bold display-6">Our Services</h2>
+            <h2 className="fw-bold display-6">Our Core Capabilities</h2>
             <p className="text-secondary fs-5">
-              Comprehensive end-to-end scientific, technical, and commercialization support
+              Integrated advisory and execution support across the product lifecycle
             </p>
           </div>
 
@@ -115,131 +132,64 @@ const Home = () => {
                 data-aos="zoom-in"
                 data-aos-delay={index * 100}
               >
-                <div className="card h-100 border-0 shadow-sm overflow-hidden hover-shadow transition">
+                <div className="card h-100 border-0 shadow-sm">
                   <img
                     src={item.img}
                     alt={item.title}
                     className="card-img-top"
                     style={{ height: "220px", objectFit: "cover" }}
                   />
-                  <div className="card-body d-flex flex-column p-4">
-                    <h5 className="card-title fw-semibold text-dark">{item.title}</h5>
-                    <p className="card-text text-secondary mt-3 flex-grow-1">
-                      {item.desc}
-                    </p>
-                    <a href="#" className="mt-auto text-primary fw-semibold align-self-start">
-                      Learn more →
-                    </a>
+                  <div className="card-body p-4">
+                    <h5 className="fw-semibold">{item.title}</h5>
+                    <p className="text-secondary mt-3">{item.desc}</p>
                   </div>
                 </div>
               </div>
             ))}
           </div>
+
         </div>
       </section>
 
-      {/* WHY CHOOSE US - New Section */}
+      {/* WHY ZPL */}
       <section className="py-5 bg-white">
         <div className="container">
+
           <div className="text-center mb-5" data-aos="fade-up">
-            <h2 className="fw-bold display-6">Why Partner with Zen Pharma Labs</h2>
+            <h2 className="fw-bold display-6">Why Organisations Choose ZPL</h2>
             <p className="text-secondary fs-5">
-              We deliver flexible, high-impact expertise without the overhead of in-house teams
+              A flexible, vendor-neutral model designed for complex, cross-border execution
             </p>
           </div>
 
-          <div className="row g-5 text-center">
-            <div className="col-md-4" data-aos="fade-up" data-aos-delay="100">
-              <div className="p-4">
-                <div className="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style={{ width: "80px", height: "80px" }}>
-                  <i className="bi bi-people text-white fs-2"></i> {/* Assume Bootstrap Icons */}
-                </div>
-                <h5 className="fw-semibold">Expert Network</h5>
-                <p className="text-secondary">
-                  Access to a curated global network of scientists, clinicians, regulatory experts, and industry veterans.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4" data-aos="fade-up" data-aos-delay="200">
-              <div className="p-4">
-                <div className="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style={{ width: "80px", height: "80px" }}>
-                  <i className="bi bi-graph-up-arrow text-white fs-2"></i>
-                </div>
-                <h5 className="fw-semibold">Proven Track Record</h5>
-                <p className="text-secondary">
-                  Successfully supported dozens of products from concept to commercialization across multiple therapeutic areas.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4" data-aos="fade-up" data-aos-delay="300">
-              <div className="p-4">
-                <div className="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style={{ width: "80px", height: "80px" }}>
-                  <i className="bi bi-shield-check text-white fs-2"></i>
-                </div>
-                <h5 className="fw-semibold">Cost-Effective & Agile</h5>
-                <p className="text-secondary">
-                  Flexible engagement models that scale with your needs, reducing time-to-market and development risks.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* HOW WE WORK */}
-      <section className="py-5">
-        <div className="container">
-          <div className="row align-items-center gy-5" data-aos="fade-up">
-            <div className="col-lg-6 order-lg-2">
-              <img
-                src="https://media.istockphoto.com/id/1646567235/photo/team-medical-analysts-and-doctors-consulting-with-paperwork-of-graphs-data-and-charts-in.jpg?s=612x612&w=0&k=20&c=4u-A8dryzdpNBww_BFWaAFvJk1qpvE0qpDvYc__yH6E="
-                alt="Zen Pharma Labs collaborative approach"
-                className="img-fluid rounded-4 shadow-lg"
-              />
-            </div>
-
-            <div className="col-lg-6 order-lg-1">
-              <h2 className="fw-bold mb-4">How We Work</h2>
-              <p className="fs-5 text-secondary">
-                Zen Pharma Labs assembles cross-functional teams — including scientists, clinicians, regulatory specialists, and commercial experts — custom-tailored to your specific project requirements.
-              </p>
-              <p className="text-secondary mt-4">
-                This agile, on-demand model provides deep domain expertise while eliminating the costs and complexities associated with maintaining large internal teams.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* WHO WE SERVE */}
-      <section className="py-5" style={{ backgroundColor: "#E9F3FF" }}>
-        <div className="container">
-          <div className="text-center mb-5" data-aos="fade-up">
-            <h2 className="fw-bold display-6">Who We Support</h2>
-            <p className="text-secondary fs-5">
-              Dedicated to innovation-driven health and wellness brands worldwide
-            </p>
-          </div>
-
-          <div className="row g-4 text-center">
+          <div className="row g-4">
             {[
-              "Pharma & Specialty Generics",
-              "Nutraceutical & Supplements",
-              "Health & Wellness Brands",
-              "Pet Health & Veterinary",
+              {
+                title: "Multi-disciplinary Project Teams",
+                desc: "Each engagement is supported by a tailored mix of formulation experts, clinicians, regulatory advisors, and commercial leaders."
+              },
+              {
+                title: "Vendor-Neutral Advice",
+                desc: "We do not own labs, plants, or CROs — ensuring recommendations are based on fit, quality, and value."
+              },
+              {
+                title: "Transparent Execution",
+                desc: "Clear scopes, defined milestones, realistic timelines, and accountability at every stage."
+              },
+              {
+                title: "Built for Cross-Border Work",
+                desc: "Experienced in working with international teams, geographies, time zones, and governance structures."
+              }
             ].map((item, index) => (
-              <div
-                key={index}
-                className="col-md-6 col-lg-3"
-                data-aos="fade-up"
-                data-aos-delay={index * 100}
-              >
-                <div className="bg-white p-5 rounded-4 shadow-sm fw-semibold fs-5">
-                  {item}
+              <div key={index} className="col-md-6" data-aos="fade-up" data-aos-delay={index * 100}>
+                <div className="p-4 bg-light rounded-4 h-100">
+                  <h5 className="fw-semibold">{item.title}</h5>
+                  <p className="text-secondary mt-2">{item.desc}</p>
                 </div>
               </div>
             ))}
           </div>
+
         </div>
       </section>
 
@@ -252,19 +202,21 @@ const Home = () => {
             data-aos="zoom-in"
           >
             <h2 className="fw-bold display-6 mb-4">
-              Ready to Accelerate Your Innovation?
+              Let’s Discuss Your Next Initiative
             </h2>
-            <p className="fs-4 mb-5">
-              Contact Zen Pharma Labs today to discuss how our experts can drive your next project forward.
+            <p className="fs-5 mb-5">
+              Speak with Zen Pharma Labs to explore how our advisory and execution model
+              can support your growth and innovation goals.
             </p>
             <button className="btn btn-light btn-lg fw-semibold px-5">
-              Talk to Our Team
+              Schedule a Conversation
             </button>
           </div>
         </div>
       </section>
+
     </div>
   );
 };
 
-export default Home;
+export default Home
