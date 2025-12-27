@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import home from "../../assets/pha1.jpg";
-import service1 from "../../assets/service1.jpg"
-import service2 from "../../assets/service2.jpg"
+import home from "../../assets/web1.webp";
+import service1 from "../../assets/service1.webp"
+import service2 from "../../assets/service2.webp"
 import service3 from "../../assets/service3.jpg"
-import service4 from "../../assets/service4.jpg"
-import service5 from "../../assets/service5.jpg"
-import service6 from "../../assets/service6.jpg"
+import service4 from "../../assets/service4.webp"
+import service5 from "../../assets/service5.webp"
+import service6 from "../../assets/service6.webp"
+import { NavLink } from "react-router-dom";
 const Home = () => {
   useEffect(() => {
     AOS.init({
@@ -16,6 +17,7 @@ const Home = () => {
       once: true,
     });
   }, []);
+
 
   const services = [
     {
@@ -72,10 +74,14 @@ img:service6  },
 
               <div className="d-flex gap-3 mt-5 flex-wrap">
                 <button className="btn btn-primary btn-lg px-4">
+                    <NavLink to="/contact"  style={{textDecoration:"none",color:"white"}}>
                   Schedule a Conversation
+                  </NavLink>
                 </button>
                 <button className="btn btn-outline-primary btn-lg px-4">
+                    <NavLink to="/services"  style={{textDecoration:"none"}}>
                   Explore Our Services
+                  </NavLink>
                 </button>
               </div>
             </div>
@@ -84,7 +90,7 @@ img:service6  },
            <img
   src={home}
   alt="Zen Pharma Labs – Technology & Execution Partner"
-  className="img-fluid my-3  rounded-4 shadow-lg"
+  className="img-fluid my-3  rounded-4 "
   style={{
     maxHeight: "420px",
     objectFit: "cover",
@@ -208,8 +214,11 @@ img:service6  },
               Speak with Zen Pharma Labs to explore how our advisory and execution model
               can support your growth and innovation goals.
             </p>
+            
             <button className="btn btn-light btn-lg fw-semibold px-5">
+              <NavLink to="/contact"  style={{textDecoration:"none"}}>
               Schedule a Conversation
+              </NavLink>
             </button>
           </div>
         </div>

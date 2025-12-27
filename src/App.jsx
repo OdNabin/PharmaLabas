@@ -4,6 +4,11 @@ import Home from "./App/Pages/Home";
 import Footer from "./App/Component/Footer";
 import Services from "./App/Pages/Services";
 import About from "./App/Pages/About";
+import Industries from "./App/Component/Industries";
+import EngagementModel from "./App/Component/EngagementModel";
+import Insights from "./App/Component/Insights";
+import ExpertNetwork from "./App/Component/ExpertNetwork";
+import Contact from "./App/Component/Contact";
 
 
 const App = () => {
@@ -15,8 +20,12 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
-          <Route path="/contact" element={<h1>Contact Us</h1>} />
           <Route path="/services" element={<Services/>} />
+           <Route path="/industries" element={<Industries/>} />
+            <Route path="/engagement-model" element={<EngagementModel/>} />
+            <Route path="/insights" element={<Insights/>} />
+              <Route path="/experts" element={<ExpertNetwork/>} />
+              <Route path="/contact" element={<Contact/>} />
         </Routes>
       </div>
       <Footer/>

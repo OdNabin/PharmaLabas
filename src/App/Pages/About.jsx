@@ -3,9 +3,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // Images (replace with real ones later)
-import about1 from "../../assets/pha1.jpg";
+import about1 from "../../assets/about.webp";
 import about2 from "../../assets/service1.jpg";
-import about3 from "../../assets/pha1.jpg";
+import about3 from "../../assets/about3.webp";
 
 const About = () => {
   useEffect(() => {

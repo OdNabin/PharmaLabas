@@ -3,12 +3,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // Images
-import img1 from "../../assets/service1.jpg";
-import img2 from "../../assets/service2.jpg";
+import img1 from "../../assets/service1.webp";
+import img2 from "../../assets/service2.webp";
 import img3 from "../../assets/service3.jpg";
-import img4 from "../../assets/service4.jpg";
-import img5 from "../../assets/service5.jpg";
-import img6 from "../../assets/service6.jpg";
+import img4 from "../../assets/service4.webp";
+import img5 from "../../assets/service5.webp";
+import img6 from "../../assets/service6.webp";
 
 const Services = () => {
   useEffect(() => {
