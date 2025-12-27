@@ -100,10 +100,7 @@ const Footer = () => {
                   info@zenpharmalabs.com
                 </a>
               </li>
-              <li className="mb-3 d-flex align-items-center">
-                <i className="bi bi-telephone me-3 fs-5 text-primary"></i>
-                <span className="text-secondary">+1 (555) 123-4567</span>
-              </li>
+         
               <li className="mb-4 d-flex align-items-start">
                 <i className="bi bi-geo-alt me-3 fs-5 text-primary mt-1"></i>
                 <span className="text-secondary">
