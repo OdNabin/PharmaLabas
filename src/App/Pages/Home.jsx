@@ -9,6 +9,7 @@ import service4 from "../../assets/service4.webp"
 import service5 from "../../assets/service5.webp"
 import service6 from "../../assets/service6.webp"
 import { NavLink } from "react-router-dom";
+import Whychose from "../Component/Whychose";
 const Home = () => {
   useEffect(() => {
     AOS.init({
@@ -158,46 +159,7 @@ img:service6  },
       </section>
 
       {/* WHY ZPL */}
-      <section className="py-5 bg-white">
-        <div className="container">
-
-          <div className="text-center mb-5" data-aos="fade-up">
-            <h2 className="fw-bold display-6">Why Organisations Choose ZPL</h2>
-            <p className="text-secondary fs-5">
-              A flexible, vendor-neutral model designed for complex, cross-border execution
-            </p>
-          </div>
-
-          <div className="row g-4">
-            {[
-              {
-                title: "Multi-disciplinary Project Teams",
-                desc: "Each engagement is supported by a tailored mix of formulation experts, clinicians, regulatory advisors, and commercial leaders."
-              },
-              {
-                title: "Vendor-Neutral Advice",
-                desc: "We do not own labs, plants, or CROs — ensuring recommendations are based on fit, quality, and value."
-              },
-              {
-                title: "Transparent Execution",
-                desc: "Clear scopes, defined milestones, realistic timelines, and accountability at every stage."
-              },
-              {
-                title: "Built for Cross-Border Work",
-                desc: "Experienced in working with international teams, geographies, time zones, and governance structures."
-              }
-            ].map((item, index) => (
-              <div key={index} className="col-md-6" data-aos="fade-up" data-aos-delay={index * 100}>
-                <div className="p-4 bg-light rounded-4 h-100">
-                  <h5 className="fw-semibold">{item.title}</h5>
-                  <p className="text-secondary mt-2">{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-        </div>
-      </section>
+<Whychose/>
 
       {/* CTA */}
       <section className="py-5">

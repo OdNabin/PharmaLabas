@@ -1,17 +1,25 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+import logo from "../../assets/logo.png"
 
 const Navbar = () => {
   const navClass = ({ isActive }) =>
     `nav-link custom-nav-link ${isActive ? "active-link" : ""}`;
 
   return (
-    <nav className="navbar navbar-expand-lg fixed-top p-3 bg-light shadow-sm">
+    <nav className="navbar navbar-expand-lg fixed-top  bg-light shadow-sm">
       <div className="container">
         {/* LOGO */}
         <NavLink className="navbar-brand fw-bold text-primary" to="/">
-          Zen Pharma Labs
+               <img
+       src={logo}
+       alt="Zen Pharma Labs – Technology & Execution Partner"
+       className="img-fluid   rounded-4 "
+       style={{
+         maxHeight: "70px",
+         objectFit: "cover",
+       }}
+     />
         </NavLink>
 
         {/* TOGGLER */}
