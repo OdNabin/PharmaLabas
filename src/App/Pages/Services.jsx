@@ -87,7 +87,7 @@ const Services = () => {
   ];
 
   return (
-    <div style={{ marginTop: "70px" }}>
+    <div style={{ marginTop: "70px",overflowX:"hidden" }} className="o">
       {/* INTRO */}
       <section className="py-5 bg-white">
         <div className="container text-center" data-aos="fade-up">

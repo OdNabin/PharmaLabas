@@ -50,7 +50,7 @@ img:service6  },
   ];
 
   return (
-    <div style={{ backgroundColor: "#F4FAFF", marginTop: "70px" }} >
+    <div style={{ backgroundColor: "#F4FAFF", marginTop: "70px",overflowX:"hidden" }} >
 
       {/* HERO SECTION */}
       <section className="py-5 " >
@@ -59,12 +59,12 @@ img:service6  },
 
             <div className="col-lg-6" data-aos="fade-right">
               <h1 className="fw-bold display-6 text-primary">
-                Technology & Execution Partner for Health and Nutraceutical Innovators
+                Technology & Execution Partner for Pharma and Nutraceutical Innovators
               </h1>
 
-              <p className="fs-5 text-secondary mt-4">
-                Zen Pharma Labs (ZPL) supports pharmaceutical, nutraceutical, health & wellness,
-                and pet health organisations by combining strategic advisory with a curated network
+              <p className="fs-5 text-secondary mt-4 ">
+                Zen Pharma Labs (ZPL) supports pharmaceutical, nutraceutical, Pharma & wellness,
+                and pet Pharma organisations by combining strategic advisory with a curated network
                 of experts across R&D, clinical, regulatory, and commercial functions.
               </p>
 
@@ -87,7 +87,7 @@ img:service6  },
               </div>
             </div>
 
-            <div className="col-lg-6 text-center" data-aos="fade-left">
+            <div className="col-lg-6 text-center my-5" data-aos="fade-left">
            <img
   src={home}
   alt="Zen Pharma Labs – Technology & Execution Partner"
@@ -109,7 +109,7 @@ img:service6  },
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-9 text-center" data-aos="fade-up">
-              <p className="fs-4 text-secondary lead">
+              <p className="fs-4 text-secondary lead py-5">
                 ZPL operates as an extension of your team — not as a single-vendor provider.
                 For each engagement, we assemble the right combination of technologists,
                 formulators, clinicians, regulatory advisors, and commercial strategists

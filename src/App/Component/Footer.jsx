@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,7 +12,7 @@ const Footer = () => {
           <div className="col-lg-4 col-md-6">
             <h3 className="fw-bold mb-3 text-white">Zen Pharma Labs</h3>
             <p className="text-secondary mb-4">
-              Your trusted external R&amp;D and technology partner for health innovation.
+              Your trusted R&amp;D and technology partner for health innovation.
             </p>
             <p className="small text-secondary mb-0">
               © {currentYear} Zen Pharma Labs. All rights reserved.
@@ -23,29 +24,26 @@ const Footer = () => {
             <h6 className="fw-semibold mb-4 text-white">Quick Links</h6>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <a href="#home" className="text-secondary text-decoration-none footer-link">
+                        <NavLink to="/" className="text-decoration-none">
+                <a className="text-secondary text-decoration-none footer-link">
                   Home
                 </a>
+                </NavLink>
               </li>
               <li className="mb-2">
-                <a href="#services" className="text-secondary text-decoration-none footer-link">
+                <NavLink to="/services" className="text-decoration-none">
+                <a className="text-secondary text-decoration-none footer-link">
                   Services
                 </a>
+                </NavLink>
               </li>
+           
               <li className="mb-2">
-                <a href="#how-we-work" className="text-secondary text-decoration-none footer-link">
-                  How We Work
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#who-we-serve" className="text-secondary text-decoration-none footer-link">
-                  Who We Serve
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#contact" className="text-secondary text-decoration-none footer-link">
+                        <NavLink to="/contact" className="text-decoration-none">
+                <a className="text-secondary text-decoration-none footer-link">
                   Contact
                 </a>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -55,35 +53,41 @@ const Footer = () => {
             <h6 className="fw-semibold mb-4 text-white">Our Services</h6>
             <ul className="list-unstyled small">
               <li className="mb-2">
+                <NavLink to="/services" className="text-decoration-none" >
                 <a href="#" className="text-secondary text-decoration-none footer-link">
                   R&amp;D &amp; Process Scale-Up
                 </a>
+                </NavLink>
               </li>
               <li className="mb-2">
+                <NavLink to="/industries" className="text-decoration-none" >
                 <a href="#" className="text-secondary text-decoration-none footer-link">
-                  Clinical &amp; Evidence Support
+                  Industries
                 </a>
+                </NavLink>
               </li>
               <li className="mb-2">
+                 <NavLink to="/engagement-model" className="text-decoration-none" >
                 <a href="#" className="text-secondary text-decoration-none footer-link">
-                  Supply Chain &amp; Partner Development
+                 Engagement Modal
                 </a>
+                </NavLink>
               </li>
               <li className="mb-2">
+                <NavLink to="/insights" className="text-decoration-none" >
                 <a href="#" className="text-secondary text-decoration-none footer-link">
-                  Technology Scouting &amp; Licensing
+                  Insights
                 </a>
+                </NavLink>
               </li>
               <li className="mb-2">
+                <NavLink to="/experts" className="text-decoration-none" >
                 <a href="#" className="text-secondary text-decoration-none footer-link">
-                  Market Research &amp; Analysis
+                  Our Expert Network
                 </a>
+                </NavLink>
               </li>
-              <li className="mb-2">
-                <a href="#" className="text-secondary text-decoration-none footer-link">
-                  Patent &amp; IP Support
-                </a>
-              </li>
+       
             </ul>
           </div>
 

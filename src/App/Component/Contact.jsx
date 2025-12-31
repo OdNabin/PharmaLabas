@@ -165,7 +165,7 @@ const Contact = () => {
                       value={formData.category}
                       onChange={handleChange}
                       required
-                      style={{ borderRadius: "10px" }}
+                      style={{ borderRadius: "10px",fontSize:"16px" }}
                     >
                       <option value="">Select category</option>
                       <option value="pharma">Pharma</option>
@@ -185,7 +185,7 @@ const Contact = () => {
                       value={formData.mainNeed}
                       onChange={handleChange}
                       required
-                      style={{ borderRadius: "10px" }}
+                      style={{ borderRadius: "10px", fontSize:"16px" }}
                     >
                       <option value="">Select main need</option>
                       <option value="rd">R&D</option>
@@ -193,6 +193,9 @@ const Contact = () => {
                       <option value="clinical">Clinical Studies</option>
                       <option value="tech-scouting">Technology Scouting</option>
                       <option value="supply-chain">Supply Chain</option>
+                       <option value="ipr">Ipr</option>
+                        <option value="out-licensing">out-licensing</option>
+                         <option value="supply-chain">Supply Chain</option>
                       <option value="other">Other</option>
                     </select>
                   </div>

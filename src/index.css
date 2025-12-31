@@ -1,5 +1,6 @@
 body{
   font-family: sans-serif;
+  overflow-x: hidden !important;
 }
 .footer-link {
   transition: color 0.3s ease;

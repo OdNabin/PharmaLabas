@@ -12,7 +12,7 @@ const Insights = () => {
   }, []);
 
   return (
-    <section className="insights-section">
+    <section className="insights-section my-3">
       <div className="container">
         {/* HEADER */}
         <div className="text-center mb-5" data-aos="fade-up">

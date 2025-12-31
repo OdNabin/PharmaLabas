@@ -6,6 +6,15 @@ const Navbar = () => {
   const navClass = ({ isActive }) =>
     `nav-link custom-nav-link ${isActive ? "active-link" : ""}`;
 
+const closeOffcanvas = () => {
+  const offcanvasElement = document.getElementById("offcanvasNavbar");
+  if (offcanvasElement) {
+    const offcanvasInstance =
+      window.bootstrap.Offcanvas.getInstance(offcanvasElement);
+    offcanvasInstance?.hide();
+  }
+};
+
   return (
     <nav className="navbar navbar-expand-lg fixed-top  bg-light shadow-sm">
       <div className="container">
@@ -55,49 +64,49 @@ const Navbar = () => {
               style={{ fontSize: "18px", fontWeight: "bold" }}
             >
               <li className="nav-item">
-                <NavLink to="/" className={navClass}>
+                <NavLink to="/" className={navClass}     onClick={closeOffcanvas}>
                   Home
                 </NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink to="/about" className={navClass}>
+                <NavLink to="/about" className={navClass}     onClick={closeOffcanvas}>
                   About Us
                 </NavLink>
               </li>
 
-              <li className="nav-item">
-                <NavLink to="/services" className={navClass}>
+              <li className="nav-item" >
+                <NavLink to="/services" className={navClass}     onClick={closeOffcanvas}> 
                   Services
                 </NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink to="/industries" className={navClass}>
+                <NavLink to="/industries" className={navClass}     onClick={closeOffcanvas}>
                   Industries
                 </NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink to="/engagement-model" className={navClass}>
+                <NavLink to="/engagement-model" className={navClass}     onClick={closeOffcanvas}>
                   Engagement Model
                 </NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink to="/insights" className={navClass}>
+                <NavLink to="/insights" className={navClass}     onClick={closeOffcanvas}>
                   Insights
                 </NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink to="/experts" className={navClass}>
+                <NavLink to="/experts" className={navClass}     onClick={closeOffcanvas}>
                   Our Expert Network
                 </NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink to="/contact" className={navClass}>
+                <NavLink to="/contact" className={navClass}     onClick={closeOffcanvas}>
                   Contact Us
                 </NavLink>
               </li>

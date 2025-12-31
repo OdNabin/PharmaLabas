@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import indus1 from "../../assets/indus1.webp";
+import indus2 from "../../assets/indus2.webp";
 const Industries = () => {
   useEffect(() => {
     AOS.init({
@@ -13,7 +14,7 @@ const Industries = () => {
   }, []);
 
   return (
-    <section className="industries-section">
+    <section className="industries-section my-5">
       <div className="container">
         {/* HEADER */}
         <div
@@ -37,7 +38,7 @@ const Industries = () => {
           >
             <div className="industry-card h-100">
               <img
-                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b"
+                src={indus1}
                 alt="Pharma and prescription nutrition"
                 className="industry-image"
               />
@@ -58,7 +59,7 @@ const Industries = () => {
           >
             <div className="industry-card h-100">
               <img
-                src="https://images.unsplash.com/photo-1611078489935-0cb964de46d6"
+                 src={indus2}
                 alt="Nutraceutical and dietary supplements"
                 className="industry-image"
               />
