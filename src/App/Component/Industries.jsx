@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import indus1 from "../../assets/indus1.webp";
 import indus2 from "../../assets/indus2.webp";
+import indus3 from "../../assets/indus3.webp";
 const Industries = () => {
   useEffect(() => {
     AOS.init({
@@ -79,7 +80,7 @@ const Industries = () => {
           >
             <div className="industry-card h-100">
               <img
-                src="https://images.unsplash.com/photo-1505577058444-a3dab90d4253"
+                 src={indus3}
                 alt="Health and wellness functional foods"
                 className="industry-image"
               />

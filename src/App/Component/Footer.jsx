@@ -92,7 +92,7 @@ const Footer = () => {
           </div>
 
           {/* Contact & Social */}
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-3 col-md-6 res">
             <h6 className="fw-semibold mb-4 text-white">Get in Touch</h6>
             <ul className="list-unstyled small">
               <li className="mb-3 d-flex align-items-center">

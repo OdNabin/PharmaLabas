@@ -385,6 +385,11 @@ body{
   h2 {
     font-size: 22px;
   }
+  .res{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
 
   .contact-intro {
     font-size: 14.5px;
