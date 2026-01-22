@@ -31,10 +31,10 @@ const Whychose = () => {
   ];
 
   return (
-    <section className="py-5 py-lg-7 bg-white">
+    <section className="py-5 py-lg-7 bg-white choose">
       <div className="container">
         <div className="row align-items-center g-5">
-               <div className="text-center  mb-5 mb-lg-0">
+               <div className="text-center  mb-5  mb-lg-0">
               <h2 className="display-5 fw-bold text-[20px]  mb-4">
                 Why Organisations Choose ZPL
               </h2>

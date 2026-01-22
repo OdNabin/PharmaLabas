@@ -108,9 +108,10 @@ const Footer = () => {
               <li className="mb-4 d-flex align-items-start">
                 <i className="bi bi-geo-alt me-3 fs-5 text-primary mt-1"></i>
                 <span className="text-secondary">
-                  123 Innovation Drive<br />
-                  Boston, MA 02101<br />
-                  United States
+                  16-2-741/A/18/1 FLAT N0 3<br />
+                  ADITHYA SAI APARTMENTS,<br />
+                  ASMANGADH SBH COLONY ROAD NO 1, <br/>
+                  malakpet , Hyderabad , Telangana , 500036
                 </span>
               </li>
             </ul>

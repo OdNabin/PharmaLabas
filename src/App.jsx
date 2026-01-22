@@ -4,6 +4,7 @@ import { Suspense, lazy } from "react";
 import Navbar from "./App/Component/Navbar";
 import Footer from "./App/Component/Footer";
 import ScrollToTop from "./App/Component/ScrollToTop";
+import ThankYou from "./App/Component/ThankYou";
 
 /* ---------------- Lazy Loaded Pages ---------------- */
 
@@ -48,6 +49,7 @@ const App = () => {
               element={<EngagementModel />}
             />
             <Route path="/insights" element={<Insights />} />
+             <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/experts" element={<ExpertNetwork />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />

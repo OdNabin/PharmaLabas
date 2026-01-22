@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import contact from "../../assets/contact.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -14,6 +15,8 @@ const Contact = () => {
     mainNeed: "",
     message: "",
   });
+
+  const navigate = useNavigate()
 
   useEffect(() => {
     AOS.init({
@@ -32,7 +35,8 @@ const Contact = () => {
     e.preventDefault();
     console.log("Contact Form Data:", formData);
     // TODO: Integrate with backend/email service
-    alert("Thank you! We'll get back to you soon.");
+    // alert("Thank you! We'll get back to you soon.");
+     navigate("/thank-you");
   };
 
   return (

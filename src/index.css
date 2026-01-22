@@ -382,6 +382,13 @@ body{
   padding: 0px !important;
   margin: 0px !important;
 }
+.choose{
+  padding: 3px !important;
+}
+.second-choose{
+  margin-bottom: 8px !important;
+  margin-top: 8px !important;
+}
   h2 {
     font-size: 22px;
   }
